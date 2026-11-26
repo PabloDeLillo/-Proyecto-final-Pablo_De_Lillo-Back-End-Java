@@ -6,7 +6,7 @@
 E-commerce web con catálogo, CRUD de productos y categorías, carrito, usuarios, historial, pedidos con estados y alertas de stock mínimo. La web es servida por Spring Boot desde `/`.
 
 ## Requisitos previos
-- JDK 21 instalado (`java -version`).
+- JDK 21 instalado (`java -version`). Si bien el enunciado pedia JDK17 al buscar la versión que tenia instalada en la maquina de desarrollo, no concidio por lo cual la realice con la JDK21.
 - Maven 3.9+ instalado (`mvn -version`).
 - MySQL Server 8+ en ejecución.
 
@@ -114,5 +114,3 @@ Administración
 <img width="1320" height="1724" alt="localhost_8080_ (1)" src="https://github.com/user-attachments/assets/667c5899-504d-47c2-895f-387c46509777" />
 
 
-
-**Autor: Pablo De Lillo.**
