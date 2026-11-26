@@ -34,7 +34,7 @@ Abrir **http://localhost:8080/**. Para generar un JAR, `mvn clean package` y lue
 | GET | `/api/productos/buscar?nombre=...` | Buscar por nombre |
 | POST | `/api/productos` | Crear |
 | PUT | `/api/productos/{id}` | Editar |
-| DELETE | `/api/productos/{id}` | Eliminar (si no tiene historial vinculado) |
+| DELETE | `/api/productos/{id}` | Eliminar del catálogo; las líneas del pedido conservan el nombre, precio y cantidad históricos |
 | GET, POST | `/api/categorias` | Listar / crear |
 | GET, PUT, DELETE | `/api/categorias/{id}` | Detalle / editar / eliminar |
 | GET, POST | `/api/usuarios` | Listar / registrar |
