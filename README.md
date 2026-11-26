@@ -16,18 +16,11 @@ E-commerce web con catálogo, CRUD de productos y categorías, carrito, usuarios
 3. Ejecutar el backend con las variables `DB_USER`, `DB_PASSWORD` y opcionalmente `DB_URL`.
 4. Hibernate crea/actualiza las tablas al arrancar (`spring.jpa.hibernate.ddl-auto=update`). Para producción corresponde utilizar migraciones Flyway y no `update`.
 
-### Ejemplo Windows PowerShell
+###  Windows PowerShell
 ```powershell
 cd backend
 $env:DB_USER="techlab"
 $env:DB_PASSWORD="TU_CLAVE_LOCAL"
-mvn spring-boot:run
-```
-
-### Ejemplo Linux/macOS
-```bash
-cd backend
-export DB_USER=techlab DB_PASSWORD='TU_CLAVE_LOCAL'
 mvn spring-boot:run
 ```
 
@@ -51,10 +44,10 @@ Abrir **http://localhost:8080/**. Para generar un JAR, `mvn clean package` y lue
 | PATCH | `/api/pedidos/{id}/estado` | Cambiar estado |
 | GET | `/api/productos/stock-bajo` | Alertas de inventario |
 
-### Ejemplos JSON
+### JSON
 Crear producto:
 ```json
-{"nombre":"Teclado mecánico","descripcion":"RGB compacto","precio":72500,"stock":8,"stockMinimo":2,"categoriaId":2,"imagenUrl":"https://ejemplo.com/teclado.jpg"}
+{"nombre":"Teclado mecánico","descripcion":"RGB compacto","precio":72500,"stock":8,"stockMinimo":2,"categoriaId":2,"imagenUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTpm0o97U3m2mafdY4zTFIOW_nSXg-tqW_yQMKmsm6uw&s=10"}
 ```
 Crear usuario:
 ```json
@@ -80,17 +73,5 @@ Content-Type: application/json
 - Cada línea guarda el precio que tenía el producto al crear el pedido.
 - La eliminación de productos vinculados a pedidos históricos está restringida por la base de datos para conservar el historial.
 
-## Organización
-- `backend/src/main/java/com/techlab/model`: entidades JPA.
-- `backend/src/main/java/com/techlab/repository`: repositorios Spring Data.
-- `backend/src/main/java/com/techlab/service`: reglas de negocio.
-- `backend/src/main/java/com/techlab/controller`: endpoints HTTP.
-- `backend/src/main/java/com/techlab/dto`: solicitudes y respuestas JSON.
-- `frontend`: fuentes editables de la web. También están copiadas en `backend/src/main/resources/static` para que Spring Boot las sirva.
-- `database`: preparación de MySQL.
-- `referencia`: preentrega original Java de consola para conservar la evolución del trabajo.
 
-## Alcance y consideraciones
-Esta versión incluye **registro y selección de usuarios, pero no autenticación real, roles ni autorización administrativa**. Es una entrega académica: no debe exponerse públicamente como tienda real sin Spring Security y protección de operaciones administrativas. El carrito utiliza `localStorage` en el navegador. Los totales y la modificación de stock se calculan en el servidor. El precio usa `double` para seguir el enunciado; en un sistema comercial se recomienda `BigDecimal`.
-
-**Autor del proyecto: Pablo De Lillo.**
+**Autor: Pablo De Lillo.**
