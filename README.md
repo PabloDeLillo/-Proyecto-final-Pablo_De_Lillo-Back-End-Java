@@ -73,5 +73,46 @@ Content-Type: application/json
 - Cada línea guarda el precio que tenía el producto al crear el pedido.
 - La eliminación de productos vinculados a pedidos históricos está restringida por la base de datos para conservar el historial.
 
+Pantallas principal
+
+<img width="1320" height="2225" alt="localhost_8080_" src="https://github.com/user-attachments/assets/464df595-cc52-4095-b271-033299bd1a2f" />
+
+Agregar usuarios
+
+<img width="1314" height="765" alt="image" src="https://github.com/user-attachments/assets/7d34f0bd-2147-44ef-9b18-84eedb890c72" />
+
+Carrito de compras
+
+<img width="1326" height="633" alt="image" src="https://github.com/user-attachments/assets/b0575d64-c2fd-425a-ba2a-09e4e2120acb" />
+
+Historial de pedidos
+
+<img width="1331" height="601" alt="image" src="https://github.com/user-attachments/assets/09079733-d782-4c55-95f7-32f98292dcb4" />
+
+Pedido cancelado 
+
+<img width="1327" height="568" alt="image" src="https://github.com/user-attachments/assets/2c66b10b-0ef8-43d2-bccc-1fab1c70bf87" />
+
+Pedido confirmado
+
+<img width="1297" height="831" alt="image" src="https://github.com/user-attachments/assets/c5e4f929-5721-4103-9b34-ea180a05967c" />
+
+Pedido enviado
+
+<img width="1306" height="833" alt="image" src="https://github.com/user-attachments/assets/cdb9fb92-280b-4f09-9381-d87b55ce6c03" />
+
+Pedido entregado
+
+<img width="1319" height="796" alt="image" src="https://github.com/user-attachments/assets/0ec4c768-414f-4fde-8282-ce83083e2047" />
+
+Categorias
+
+<img width="1321" height="738" alt="image" src="https://github.com/user-attachments/assets/46a2abf7-ef72-4273-b97a-1b1e89c42a04" />
+
+Administración
+
+<img width="1320" height="1724" alt="localhost_8080_ (1)" src="https://github.com/user-attachments/assets/667c5899-504d-47c2-895f-387c46509777" />
+
+
 
 **Autor: Pablo De Lillo.**
